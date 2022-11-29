@@ -1,0 +1,201 @@
+
+*{	 
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box	
+}
+
+body {
+	background-image: url(background.jpeg);
+	background-size: 100%;
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	backdrop-filter: brightness(90%);
+	height: 141vh;
+}
+
+
+
+
+
+.logo {
+	position: top left;
+	width: 100px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+nav ul{ 
+	list-style-type: none;
+	font-size: 15px;
+	margin-top: -80px;
+	margin-left: 115px;
+
+}
+
+li {
+	float: left;
+	padding: 10px;
+	border-right: 1px solid #A00B0B;
+	font-size: 17px;
+}
+
+li a {
+	text-decoration: none;
+	color: #A00B0B;
+} 
+
+li a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+li:last-child {
+	border-right: none;
+}
+
+div.box1 {
+	background: rgba(0,0,0,0.35);
+	width: 90%;
+	text-align: center;	
+	margin: auto;
+	margin-top: 150px;
+	border-radius: 15px;
+	height: 600px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	position: relative;
+}
+
+
+.icon {
+	width: 120px;
+	float: center;
+	margin-left: -40px;
+	margin-top: 30px;
+}
+
+button {
+	border-radius: 12px;
+	width: 50%;
+	height: 40px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+button:hover {
+	text-decoration: underline;
+}
+
+span {
+	background-color: #3B3B3B;
+	color: white;
+	font-size: 10px;
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------*/
+
+/* About us page */
+
+.height{
+  left:2.1%;
+  top:20%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.subBoxes {
+  display: flex;
+  text-align: center;
+}
+
+
+.subBoxes  div {
+  background-color: rgba(249, 252, 253,0.8);
+  margin: 25px;
+  padding: 25px;
+  border-radius: 15%;
+  padding-bottom : 25px;
+    
+}
+
+.lable{
+	font-size: 50px;
+	padding-top: 40px;
+	margin-bottom: -10px;
+}
+
+.icon3{
+
+  position: absolute;
+  left:74%;
+  top:44%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #616A6B;
+  font-size: 12px;
+}
+.icon2{
+ position: absolute;
+  left:6%;
+  top:56%;
+  margin-left: 4%;
+  color: #616A6B;
+  font-size: 9.5px;
+}
+
+.icon1{
+  color: #D7DBDD;
+  font-size: 9.5px;
+}
+
+.link {
+	font-size: 13px;
+	color: black;
+	text-decoration: underline;
+}
+
+.title1 {
+	margin-top: -50px;
+	margin-bottom: 10px;
+	font-size: 26px;
+}
+
+.title2 {
+	margin-top: 14px;
+	margin-bottom: 10px;
+	font-size: 26px;
+}
+
+.title3 {
+	margin-top: 14px;
+	margin-bottom: 10px;
+	font-size: 26px;
+}
+
+.paragraph {
+
+	font-size: 14px;
+}
+
+.reference {
+	
+	padding: 10px;
+	color: #D7DBDD;
+	
+}
+
+/* ------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------*/
+
+footer {
+	position: bottom left;
+	margin-top: 52px;
+	margin-left:11px;
+}
+/* ------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------*/

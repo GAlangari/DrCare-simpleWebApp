@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Ethics (1).css"> 
+                <script>  function validate() {
+                            
+                            var Fblood = document.getElementById("Bloodp");
+                            var Sblood = document.getElementById("Bloods");
+                            var INTsum = Height.value - 100 ;  
+
+                            if((Fblood.value == "140" || Fblood.value == "90") && ( Sblood.value <= "240" || Sblood.value >= "160")) 
+                            {
+                            	if(INTsum > Weight.value)
+                            	{
+                            		alert("Your Weight is less than the ideal weight. \n Your blood pressure and blood sugar are very high.");
+                                	return false;
+                            	}
+                            	else if (INTsum < Weight.value)
+                            	{
+                            		windows.alert("Your Weight is greater than the ideal weight. \n Your blood pressure and blood sugar are very high.");
+                                	return false;
+                            	}
+                            	else if (INTsum == Weight.value)
+                            	{
+                            		alert("Your Weight is ideal. \n Your blood pressure and blood sugar are very high.");
+                               		return false;
+                            	}
+                            }
+                            else if ((Fblood.value == "120" || Fblood.value == "80") && (Sblood.value <= "120" || Sblood.value >= "90"))
+                            {
+                            	if(INTsum > Weight.value)
+                            	{
+                            		alert("Your Weight is less than the ideal weight. \n Your blood pressure and blood sugar are normal.");
+                                	return false;
+                            	}
+                            	else if (INTsum < Weight.value)
+                            	{
+                            		alert("Your Weight is greater than the ideal weight. \n Your blood pressure and blood sugar are normal.");
+                                	return false;
+                            	}
+                            	else if (INTsum == Weight.value)
+                            	{
+                            		alert("Your Weight is ideal. \n Your blood pressure and blood sugar are normal." );
+                               		return false;
+                            	}
+                            }
+                            else if ((Fblood.value == "140" || Fblood.value == "90") && (Sblood.value <= "120" || Sblood.value >= "90") ) 
+                            {
+                            	if(INTsum > Weight.value)
+                            	{
+                            		alert("Your Weight is less than the ideal weight. \n Your blood pressure is very high and blood sugar is normal.");
+                                	return false;
+                            	}
+                            	else if (INTsum < Weight.value)
+                            	{
+                            		alert("Your Weight is greater than the ideal weight. \n Your blood pressure is very high and blood sugar is normal.");
+                                	return false;
+                            	}
+                            	else if (INTsum == Weight.value)
+                            	{
+                            		alert("Your Weight is ideal. \n Your blood pressure is very high and blood sugar is normal." );
+                               		return false;
+                            	}
+                            }
+                            else if(( Sblood.value <= "240" || Sblood.value >= "160") && (Fblood.value == "120" || Fblood.value == "80"))
+                            {
+                            	if(INTsum > Weight.value)
+                            	{
+                            		alert("Your Weight is less than the ideal weight. \n Your blood pressure is normal and blood sugar is very high.");
+                                	return false;
+                            	}
+                            	else if (INTsum < Weight.value)
+                            	{
+                            		alert("Your Weight is greater than the ideal weight. \n Your blood pressure is normal and blood sugar is very high.");
+                                	return false;
+                            	}
+                            	else if (INTsum == Weight.value)
+                            	{
+                            		alert("Your Weight is ideal. \n Your blood pressure is normal and blood sugar is very high." );
+                               		return false;
+                            	}
+                            	alert(" Your blood pressure is normal and blood sugar is very high. ");
+								return false;
+                            }
+                            else
+                            {
+                                true;
+                            }
+                        } 
+                </script>
+    
+    </head>
+ <body>
+ 						<header>
+			<img class = "logo" src = "logo.png" alt = "logo">
+			<nav>
+				<ul>
+					<li><a href = "index.html">Home</a></li>
+                    <li><a href = "Ethics (1).html">Check your health</a></li>
+                    <li><a href = "Diseases2.html">Diseases</a></li>
+                    <li><a href = "policy.html">User agreement</a></li>
+                    <li><a href = "AboutUS.html">About us</a></li>
+				</ul>
+			</nav>
+		</header>
+
+
+
+ 	<div class="space">
+
+                <div class="wrapper">
+                        <div class="contact-form">
+                            <div class="input-fields">
+                <form onsubmit="return validate()"  method="post" action="">
+
+                    <h3 class="hh1"> Please fill out the field below: </h3>
+
+                    <label> Name: <input type="text" class="inputt" > </label>
+                    <label> Age: <input type="text" class="inputt"> </label>
+                    
+                    <label> Height: <input type="Number" class="inputt" required id="Height"> </label>
+                    <label> Weight: <input type="Number" class="inputt" id = "Weight"> </label>
+
+                    <label> Blood pressure: <input type="Number" class="inputt" id = "Bloodp"> </label>
+                    <label> Blood sugar: <input type="Number" class="inputt" id = "Bloods" required> </label>
+                    <p><br>*Note: By entering your data in the above fields, you accept the site's <a href = "policy.html">User Agreement</a></p>
+
+              
+                </div>
+                    <button type="submit">Check</button>
+                 
+            </div>
+        </div>
+        </form>
+            </div><br><br><br>
+             <footer>
+			<h6>&copy; DrCare.com | Designed by G-R-J</h6>
+		</footer>
+   </body>
+
+</html>
